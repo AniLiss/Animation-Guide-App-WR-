@@ -1,0 +1,123 @@
+<svg viewBox="0 0 500 60">
+
+    <!-- Clippath  with text -->
+    <clippath id="cp-text">
+        <text text-anchor="middle"
+              x="10%"
+              y="50%"
+              dy=".35em"
+              class="text--line">
+            a
+        </text>
+        <text text-anchor="middle"
+              x="20%"
+              y="50%"
+              dy=".35em"
+              class="text--line">
+            n
+        </text>
+
+        <text text-anchor="middle"
+              x="27%"
+              y="70%"
+              dy="15px"
+              class="text--line"
+        >
+            I
+        </text>
+
+        <text text-anchor="middle"
+              x="40%"
+              y="50%"
+              dy=".35em"
+              class="text--line">
+            m
+        </text>
+
+        <text text-anchor="middle"
+              x="50%"
+              y="50%"
+              dy=".35em"
+              class="text--line">
+            a
+        </text>
+
+        <text text-anchor="middle"
+              x="60%"
+              y="50%"
+              dy=".35em"
+              class="text--line">
+            t
+        </text>
+
+        <text text-anchor="middle"
+              x="70%"
+              y="80%"
+              dy="15px"
+              class="text--line"
+        >
+            I
+        </text>
+
+        <text text-anchor="middle"
+              x="80%"
+              y="50%"
+              dy=".35em"
+              class="text--line">
+            o
+        </text>
+
+        <text text-anchor="middle"
+              x="90%"
+              y="50%"
+              dy=".35em"
+              class="text--line">
+            n
+        </text>
+    </clippath>
+
+    <!-- Group for shadow -->
+    <g clip-path="url(#cp-text)" class="shadow">
+        <rect
+                width="100%"
+                height="100%"
+                class="anim-shape anim-shape--shadow"
+        ></rect>
+    </g>
+
+    <!-- Group with clippath for text-->
+    <g clip-path="url(#cp-text)" class="colortext">
+        <!-- Animated shapes inside text -->
+        <rect
+                width="100%"
+                height="100%"
+                class="anim-shape"
+        ></rect>
+        <rect
+                width="80%"
+                height="100%"
+                class="anim-shape"
+        ></rect>
+        <rect
+                width="60%"
+                height="100%"
+                class="anim-shape"
+        ></rect>
+        <rect
+                width="40%"
+                height="100%"
+                class="anim-shape"
+        ></rect>
+        <rect
+                width="20%"
+                height="100%"
+                class="anim-shape"
+        ></rect>
+    </g>
+
+    <!-- Transparent copy of text to keep
+           patterned text selectable -->
+    <use xlink:href="#s-text"
+         class="text--transparent"></use>
+
+</svg>
